@@ -4,7 +4,7 @@ export const D3_CONSTANTS = {
     WIDTH: 960,
     HEIGHT: 500,
     DURATION: {
-        INTERVAL: 2000,
+        INTERVAL: 1000,
         TRANSITION: 500
     }
 };

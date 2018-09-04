@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import * as d3 from 'd3';
 import { LineChart } from './charts/line_chart';
+import { LineChart2 } from './charts/line_chart_continuous';
 import logo from './logo.svg';
 import './App.css';
 
@@ -55,6 +56,7 @@ class App extends Component {
                     <img src={logo} className="App-logo" alt="logo" />
                     <h1 className="App-title">Welcome to React</h1>
                 </header>
+                <LineChart2 />
                 <LineChart data={this.state.data} />
             </div>
         );
