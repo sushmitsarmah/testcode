@@ -6,6 +6,7 @@
     "d3": "^5.7.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-emotion": "^9.2.8",
     "react-scripts": "1.1.5"
   },
   "scripts": {

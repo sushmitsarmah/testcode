@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import * as d3 from 'd3';
-import { LineChart } from './charts/line_chart';
-import { LineChart2 } from './charts/line_chart_continuous';
+// import { LineChart } from './charts/line_chart';
+// import { LineChart2 } from './charts/line_chart_continuous';
+import { HeartRate } from './charts/heartrate';
 import logo from './logo.svg';
 import './App.css';
+
+// data from http://ecg.mit.edu/time-series/
+import { hrdata1 } from './data/hr.11839';
+import { hrdata2 } from './data/hr.7257';
+import { hrdata3 } from './data/hr.207';
+import { hrdata4 } from './data/hr.237';
 
 import { D3_CONSTANTS as CONSTANTS } from './constants';
 
@@ -56,8 +63,12 @@ class App extends Component {
                     <img src={logo} className="App-logo" alt="logo" />
                     <h1 className="App-title">Welcome to React</h1>
                 </header>
-                <LineChart2 />
-                <LineChart data={this.state.data} />
+                <HeartRate hrdata={hrdata1}/>
+                <HeartRate hrdata={hrdata2} />
+                <HeartRate hrdata={hrdata3} />
+                <HeartRate hrdata={hrdata4} />
+                {/* <LineChart2 />
+                <LineChart data={this.state.data} /> */}
             </div>
         );
     }
